@@ -1,6 +1,4 @@
-# flask-cim-bank
-Customer Information Management Bank
-
+# Customer Information Management Bank
 
 This REST API is created with following endpoint
  
