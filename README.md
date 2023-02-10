@@ -11,3 +11,16 @@ The postman collection can be find at here https://github.com/massodasuki/flask-
 
 TODO
 # How to RUN 
+
+```
+$ source env/bin/activate
+$ pip install -r requirements.txt
+$ flask db init
+$ flask db upgrade
+$ flask db migrate
+$ flask run
+```
+
+Then the web app can be access at local http://localhost:5000
+
+
