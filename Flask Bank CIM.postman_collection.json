@@ -43,31 +43,12 @@
 			"response": []
 		},
 		{
-			"name": "5. View All Customer",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:5000/customers",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "5000",
-					"path": [
-						"customers"
-					]
-				}
-			},
-			"response": []
-		},
-		{
 			"name": "2. View Customer Detail Id",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:5000/customers/2",
+					"raw": "http://localhost:5000/customers/:id",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -75,7 +56,13 @@
 					"port": "5000",
 					"path": [
 						"customers",
-						"2"
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": ""
+						}
 					]
 				}
 			},
@@ -109,7 +96,7 @@
 					"variable": [
 						{
 							"key": "id",
-							"value": null
+							"value": ""
 						}
 					]
 				}
@@ -121,15 +108,6 @@
 			"request": {
 				"method": "DELETE",
 				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{ \r\n    \"name\":\"Masso\",\r\n    \"date_of_birth\": \"1993-07-16\",\r\n    \"address\": \"Shah Alam\",\r\n    \"phone_number\": \"01131334193\",\r\n    \"email\":\"massodasuki@gmail.com\",\r\n    \"income\":4100.00,\r\n    \"employment_status\": \"Private\",\r\n    \"loan_history\": \"Affin\",\r\n    \"bank_account_info\": \"12345648\",\r\n    \"government_issued_id\": \"123456-78-9013\",\r\n    \"age\": 30,\r\n    \"gender\": \"Male\",\r\n    \"education\":\"Master Degree\",\r\n    \"occupation\": \"Software Engineer\",\r\n    \"marital_status\": \"Married\",\r\n    \"spending_habits\": \"Medium\",\r\n    \"payment_history\": \"Excellent\",\r\n    \"transaction_frequency\": \"Medium\"\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
 				"url": {
 					"raw": "http://localhost:5000/customers/:id",
 					"protocol": "http",
@@ -146,6 +124,25 @@
 							"key": "id",
 							"value": "2"
 						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5. View All Customer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"customers"
 					]
 				}
 			},
