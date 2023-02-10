@@ -1,13 +1,13 @@
 {
 	"info": {
 		"_postman_id": "4d6badfc-6bdf-4e25-8975-85ca339b7eec",
-		"name": "Flask Bank CRM",
+		"name": "Flask Bank CIM",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "10160636"
 	},
 	"item": [
 		{
-			"name": "Add Customer",
+			"name": "1. Register new customer",
 			"request": {
 				"method": "POST",
 				"header": [
@@ -43,7 +43,7 @@
 			"response": []
 		},
 		{
-			"name": "View All Customer",
+			"name": "5. View All Customer",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -62,7 +62,7 @@
 			"response": []
 		},
 		{
-			"name": "View Customer By Id",
+			"name": "2. View Customer Detail Id",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -82,7 +82,7 @@
 			"response": []
 		},
 		{
-			"name": "Update Customer By Id",
+			"name": "3. Update Customer Detail By Id",
 			"request": {
 				"method": "PUT",
 				"header": [],
@@ -117,7 +117,7 @@
 			"response": []
 		},
 		{
-			"name": "Delete Customer By Id",
+			"name": "4. Delete Customer Detail by Id",
 			"request": {
 				"method": "DELETE",
 				"header": [],
